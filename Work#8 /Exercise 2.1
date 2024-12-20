@@ -1,4 +1,3 @@
-// Предполагается, что ввод строки "0" означает конец ввода значений
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,6 +5,7 @@ using namespace std;
 
 // Ввод значений стека
 int Input(int len, vector <string>& List) {
+	cout << "Предполагается, что ввод строки '0' означает конец ввода значений" << endl;
 	string Latest_string = "1";
 	while (Latest_string != "0") {
 		List.resize(len + 1);
@@ -17,12 +17,13 @@ int Input(int len, vector <string>& List) {
 	List.resize(len);
 	return len;
 }
+
 // Добавление элементов
-int Push(int len, vector <string> &List) {
+int Push(int len, vector <string>& List) {
 	string push = "1";
 	while (push != "0") {
 		cout << "Добавляете: ";
-		List.resize(len+1);
+		List.resize(len + 1);
 		cin >> push;
 		List[len] = push;
 		len += 1;
@@ -32,7 +33,7 @@ int Push(int len, vector <string> &List) {
 	List.resize(len);
 	return len;
 }
-//«sdf», «2», «ssd4», «hello» 
+
 // Удаление элементов
 int Pop(int len, vector <string>& List) {
 	int i = 0, view_i = 1;
@@ -54,12 +55,14 @@ int Pop(int len, vector <string>& List) {
 	}
 	return len;
 }
+
 // Вывод стека
 void Output(int len, vector <string>& List) {
 	for (int i = 0; i < len; i++) {
 		cout << "List[" << i + 1 << "] = " << List[i] << endl;
 	}
 }
+
 // Нахождение строки минимальной длины
 void Minstring(int len, vector <string>& List) {
 	string min_string = List[0];
