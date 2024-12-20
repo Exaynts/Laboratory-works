@@ -1,4 +1,3 @@
-// Предполагается, что ввод числа "0" означает конец ввода значений
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,6 +5,7 @@ using namespace std;
 
 // Ввод значений стека
 int Input(int len, vector <int>& List) {
+	cout << "Предполагается, что ввод числа '0' означает конец ввода значений" << endl;
 	int Latest_int = 1;
 	while (Latest_int != 0) {
 		List.resize(len + 1);
@@ -18,11 +18,11 @@ int Input(int len, vector <int>& List) {
 	return len;
 }
 // Добавление элементов
-int Push(int len, vector <int> &List) {
+int Push(int len, vector <int>& List) {
 	int push = 1;
 	while (push != 0) {
 		cout << "Добавляете: ";
-		List.resize(len+1);
+		List.resize(len + 1);
 		cin >> push;
 		List[len] = push;
 		len += 1;
