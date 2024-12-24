@@ -32,8 +32,7 @@ int Delete(int len, deque <int>& List, int p1) {
 }
 // Вывод указателя
 void Output(deque <int>& List) {
-	int a = List.front();
-	int* list_begin = &a;
+	int* list_begin = List.front();
 	cout << "Указатель на первый элемент списка: " << list_begin << endl;
 }
 // Вывод преобразованного списка
