@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream inputFile("a.txt"); 
+    ofstream outputFile("a2.txt");
+
+    if (!inputFile.is_open()) {
+        cerr << "Не удалось открыть файл a.txt" << endl;
+        return 1;
+    }
+    double number;
+    while (inputFile >> number) {
+        if (number != 0)
+            outputFile << number << endl; // Записываем его в файл a2.txt
+
+    }
+    inputFile.close();
+    outputFile.close(); 
+    return 0;
+}
