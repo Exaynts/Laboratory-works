@@ -1,0 +1,20 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+usingnamespace std;
+
+int main() {
+   ifstream inputFile("input.txt"); 
+   ofstream outputFile("output.txt");
+    char ch;
+
+    while (inputFile.get(ch)) {
+        // Если символ не является цифрой, записываем его в новый файл
+        if (!isdigit(ch)) {
+            outputFile << ch;
+        }
+    }
+    inputFile.close(); 
+    outputFile.close();
+    return 0;
+}
