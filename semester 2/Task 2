@@ -6,8 +6,8 @@ int main() {
     setlocale(LC_ALL, "ru");
     string inpath = "a.txt";
     string outpath = "a2.txt";
-    ifstream inFile("a.txt");
-    ofstream outFile("a2.txt");
+    ifstream inFile;
+    ofstream outFile;
     inFile.open(inpath);
     outFile.open(outpath);
     if (!inFile.is_open() or !outFile.is_open())
@@ -15,8 +15,9 @@ int main() {
     else {
         double number;
         while (inFile >> number) {
+            cout << number << endl;
             if (number != 0) {
-            outFile << number << endl;
+                outFile << number << endl;
             }
         }
         inFile.close();
