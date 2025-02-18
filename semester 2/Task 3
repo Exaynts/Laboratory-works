@@ -1,20 +1,24 @@
 #include <iostream>
 #include <fstream>
-#include <string>
-usingnamespace std;
+using namespace std;
 
 int main() {
-   ifstream inputFile("input.txt"); 
-   ofstream outputFile("output.txt");
-    char ch;
-
-    while (inputFile.get(ch)) {
-        // Если символ не является цифрой, записываем его в новый файл
-        if (!isdigit(ch)) {
-            outputFile << ch;
+    setlocale(LC_ALL, "ru");
+    ifstream inFile;
+    ofstream withoutDigitFile;
+    inFile.open("a.txt");
+    withoutDigitFile.open("a2.txt");
+    if (!inFile.is_open() or !withoutDigitFile.is_open())
+        cout << "Ошибка открытия файлов";
+    else {
+        char ch;
+        while (inFile.get(ch)) {
+            if (!isdigit(ch)) {
+                withoutDigitFile << ch;
+            }
         }
+        inFile.close();
+        withoutDigitFile.close();
     }
-    inputFile.close(); 
-    outputFile.close();
     return 0;
 }
