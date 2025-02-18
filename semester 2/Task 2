@@ -3,20 +3,23 @@
 using namespace std;
 
 int main() {
-    ifstream inputFile("a.txt"); 
-    ofstream outputFile("a2.txt");
-
-    if (!inputFile.is_open()) {
-        cerr << "Не удалось открыть файл a.txt" << endl;
-        return 1;
+    setlocale(LC_ALL, "ru");
+    string path = "a.txt";
+    ifstream inFile("a.txt");
+    ofstream outFile("a2.txt");
+    inFile.open(path);
+    outFile.open(path);
+    if (!inFile.is_open() or !outFile.is_open())
+        cout << "Ошибка открытия файлов";
+    else {
+        double number;
+        while (inFile >> number) {
+            if (number != 0) {
+            outFile << number << endl;
+            }
+        }
+        inFile.close();
+        outFile.close();
     }
-    double number;
-    while (inputFile >> number) {
-        if (number != 0)
-            outputFile << number << endl; // Записываем его в файл a2.txt
-
-    }
-    inputFile.close();
-    outputFile.close(); 
     return 0;
 }
