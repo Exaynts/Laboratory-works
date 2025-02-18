@@ -4,12 +4,10 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "ru");
-    string inpath = "a.txt";
-    string outpath = "a2.txt";
     ifstream inFile;
     ofstream outFile;
-    inFile.open(inpath);
-    outFile.open(outpath);
+    inFile.open("a.txt");
+    outFile.open("a2.txt");
     if (!inFile.is_open() or !outFile.is_open())
         cout << "Ошибка открытия файлов";
     else {
