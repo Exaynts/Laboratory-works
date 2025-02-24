@@ -28,7 +28,7 @@ public:
     }
     //Отрисовка прямоугольника
     void Drawing(float x1, float x2, float y1, float y2) {
-        cout << "Get Rectangle Image and its diagonal" << endl;
+        cout << "*Getting rectangle's image and its diagonal*" << endl;
     }
     // Обработка значений полей (Вычисление длины диагонали)
     float CalculatingOfDiagonal(float x1, float x2, float y1, float y2) {
@@ -38,8 +38,8 @@ public:
     }
     //Строка информации об объекте
     void InfoOfRectangle(float x1, float x2, float y1, float y2) {
-        cout << endl << "x1 = " << x1 << " x2 = " << x2 << " y1 = " << y1 << " y2 = " << y2 <<
-        " rectangle's diagonal = " << CalculatingOfDiagonal(x1, y1, x2, y2) << endl;
+        cout << endl << "x1 = " << x1 << ", x2 = " << x2 << ", y1 = " << y1 << ", y2 = " << y2 <<
+            ", rectangle's diagonal = " << CalculatingOfDiagonal(x1, y1, x2, y2) << endl;
     }
 };
 
@@ -59,5 +59,9 @@ int main() {
     // Вывод информации
     rectangle.InfoOfRectangle(x1, x2, y1, y2);
     rectangle.Drawing(x1, x2, y1, y2);
+    // Выполнение программы для значений-констант
+    const int xx1 = 12, xx2 = 0, yy1 = 5, yy2 = 0;
+    rectangle.InfoOfRectangle(xx1, xx2, yy1, yy2);
+    rectangle.Drawing(xx1, xx2, yy1, yy2);
     return 0;
 }
