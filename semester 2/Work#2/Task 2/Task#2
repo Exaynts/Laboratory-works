@@ -64,9 +64,11 @@ public:
         }
         // Заполнение диагонали прямоугольника
         for (int i = 0; i < xx; i++) {
-            int j = i * yy / xx;
-            Matrix[i][j] = "*";
-        }
+            int j1 = i * yy / xx;
+            int j2 = (i+1) * yy / xx;
+            for(j1; j1 < j2; j1++) {
+                Matrix[i][j1] = "*";
+            }
         // Вывод матрицы на консоль
         for (int i = 0; i < xx; i++) {
             cout << endl;
