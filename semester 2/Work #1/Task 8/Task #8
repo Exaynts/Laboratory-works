@@ -62,7 +62,7 @@ int main() {
     ifstream Computers;
     Computers.open("computers.txt");
     // Чтение данных из файла
-    vector <Computer> сomputers = ReadFile("Computers.txt");
+    vector <Computer> сomputers = ReadFile("computers.txt");
     // Обработка данных
     float sumprice = Data_Processing(сomputers);
     // Вывод данных
@@ -72,9 +72,15 @@ int main() {
 }
 
 /*
-ofstream filewrite("computer.bin", ios::binary);
-    string text1 = "Asus 1.5 4 16 30000 \n IbetterThanAsus 8 32 64 100500 \n SomeComp 2 2 12 50000 \n";
-    filewrite << text1;
-    filewrite.write((char*)&text1, sizeof(text1));
-    text1.close();
+// Попытка создания бинарного файла c данными (неудачная)
+string datafile = "computers.dat";
+//CreateBinaryFile(datafile);
+struct Computer computer[]{ {"Asus", 1.5, 4, 16, 30000},
+{ "IbetterThanAsus", 8, 32, 64, 100500 },
+{ "SomeComp", 2, 2, 12, 50000 }
+};
+ofstream ofs(datafile, ios::out and ios::binary);
+if (ofs.is_open()) {
+    ofs.write((char*)computer, sizeof(computer));
+}
 */
