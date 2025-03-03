@@ -6,7 +6,7 @@ using namespace std;
 void ReadingFile(string file) {
     ifstream infile(file);
     if (!infile.is_open())
-        cerr << "Ошибка открытия файлов";
+        cerr << "Ошибка открытия файлов" << endl;
     else {
         int number = 0;
         while (infile >> number) {
@@ -19,7 +19,7 @@ void ReadingFile(string file) {
 int EvenCount(string file) {
     ifstream inFile(file);
     if (!inFile.is_open())
-        cerr << "Ошибка открытия файлов";
+        cerr << "Ошибка открытия файлов" << endl;
     else {
         int number;
         int even = 0; // Кол-во чётных чисел
