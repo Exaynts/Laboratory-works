@@ -41,6 +41,7 @@ int main() {
     setlocale(LC_ALL, "ru");
     system("chcp 1251 > nul");
     string input;
+    cout << "Вводимый текст: " << endl;
     getline(cin, input);
     // Обработка текста
     int count = ProcessingText(input);
