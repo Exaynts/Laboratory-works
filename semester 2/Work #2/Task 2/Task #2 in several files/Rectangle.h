@@ -2,6 +2,10 @@
 #include "SimpleActionsWithRectangle.cpp"
 #include "RectangleDrawing.cpp"
 class Rectangle {
+    float x1;
+    float x2;
+    float y1;
+    float y2;
 public:
     // Конструктор объекта по умолчанию
     Rectangle() {
@@ -11,6 +15,7 @@ public:
     }
     // Деструктор объекта
     ~Rectangle() {
+        cout << "The rectangle has been removed" << endl;
     }
     //Отрисовка прямоугольника с помощью псевдографики
     void RectangleDrawing(float x1, float x2, float y1, float y2) {
