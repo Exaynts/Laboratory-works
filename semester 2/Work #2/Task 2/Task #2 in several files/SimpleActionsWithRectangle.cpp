@@ -3,13 +3,7 @@
 #include "Rectangle.h"
 using namespace std;
 
-class Rectangle {
-public:
-    float x1;
-    float x2;
-    float y1;
-    float y2;
-    // Конструктор объекта по умолчанию
+// Конструктор объекта по умолчанию
     Rectangle() {
         x1 = 0;
         y1 = 0;
@@ -22,10 +16,6 @@ public:
         y1 = p_y1;
         x2 = p_x2;
         y2 = p_y2;
-    }
-    // Деструктор объекта
-    ~Rectangle() {
-        cout << "The rectangle has been removed" << endl;
     }
     // Обработка значений полей (Вычисление длины диагонали)
     float CalculatingOfDiagonal(float x1, float x2, float y1, float y2) {
