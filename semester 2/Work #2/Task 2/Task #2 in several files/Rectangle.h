@@ -2,28 +2,28 @@
 #include "SimpleActionsWithRectangle.cpp"
 #include "RectangleDrawing.cpp"
 class Rectangle {
-    float x1;
-    float x2;
-    float y1;
-    float y2;
+    int x1;
+    int x2;
+    int y1;
+    int y2;
 public:
     // Конструктор объекта по умолчанию
     Rectangle() {
     }
     //Конструктор перезагрузки с параметрами;
-    Rectangle(float p_x1, float p_x2, float p_y1, float p_y2) {
+    Rectangle(int p_x1, int p_x2,  int p_y1,  int p_y2) {
     }
     // Деструктор объекта
     ~Rectangle() {
         cout << "The rectangle has been removed" << endl;
     }
     //Отрисовка прямоугольника с помощью псевдографики
-    void RectangleDrawing(float x1, float x2, float y1, float y2) {
+    void RectangleDrawing(int x1, int x2, int y1, int y2) {
     }
     // Обработка значений полей (Вычисление длины диагонали)
-    float CalculatingOfDiagonal(float x1, float x2, float y1, float y2) {
+    float CalculatingOfDiagonal(int x1, int x2, int y1, int y2) {
     }
     //Строка информации об объекте
-    void InfoOfRectangle(float x1, float x2, float y1, float y2) {
+    void InfoOfRectangle(int x1, int x2, int y1, int y2) {
     }
 };
