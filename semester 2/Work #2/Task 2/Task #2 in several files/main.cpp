@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 #include "Rectangle.h"
 using namespace std;
 
