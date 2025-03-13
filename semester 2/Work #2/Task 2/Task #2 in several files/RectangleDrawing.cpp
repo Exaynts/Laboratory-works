@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Rectangle.h"
 #include <vector>
 using namespace std;
 //Отрисовка прямоугольника с помощью псевдографики
