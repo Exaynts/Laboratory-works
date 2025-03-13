@@ -10,7 +10,7 @@ public:
     // Конструктор объекта по умолчанию
     Rectangle() {
     }
-    //Конструктор перезагрузки с параметрами;
+    // Конструктор перезагрузки с параметрами;
     Rectangle(int p_x1, int p_x2,  int p_y1,  int p_y2) {
     }
     // Деструктор объекта
@@ -23,7 +23,7 @@ public:
     // Обработка значений полей (Вычисление длины диагонали)
     float CalculatingOfDiagonal(int x1, int x2, int y1, int y2) {
     }
-    //Строка информации об объекте
+    // Строка информации об объекте
     void InfoOfRectangle(int x1, int x2, int y1, int y2) {
     }
 } rectangle;
