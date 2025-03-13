@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <math.h>
 #include "Rectangle.h"
 using namespace std;
@@ -16,7 +16,7 @@ int main() {
     cin >> y2;
 
     // Создание объекта класса Legs
-    Rectangle rectangle(x1, x2, y1, y2);
+    rectangle(x1, x2, y1, y2);
     // Вывод информации
     rectangle.InfoOfRectangle(x1, x2, y1, y2);
     rectangle.RectangleDrawing(x1, x2, y1, y2);
