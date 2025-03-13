@@ -13,10 +13,6 @@ public:
     // Конструктор перезагрузки с параметрами;
     Rectangle(int p_x1, int p_x2,  int p_y1,  int p_y2) {
     }
-    // Деструктор объекта
-    ~Rectangle() {
-        cout << "The rectangle has been removed" << endl;
-    }
     //Отрисовка прямоугольника с помощью псевдографики
     void RectangleDrawing(int x1, int x2, int y1, int y2) {
     }
@@ -25,5 +21,9 @@ public:
     }
     // Строка информации об объекте
     void InfoOfRectangle(int x1, int x2, int y1, int y2) {
+    }
+    // Деструктор объекта
+    ~Rectangle() {
+        cout << "The rectangle has been removed" << endl;
     }
 } rectangle;
