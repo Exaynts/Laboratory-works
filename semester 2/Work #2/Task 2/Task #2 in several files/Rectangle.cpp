@@ -15,6 +15,7 @@ using namespace std;
         y1 = p_y1;
         x2 = p_x2;
         y2 = p_y2;
+        cout << "meow" << endl;
     }
     // Обработка значений полей (Вычисление длины диагонали)
     float CalculatingOfDiagonal(int x1, int x2, int y1, int y2) {
