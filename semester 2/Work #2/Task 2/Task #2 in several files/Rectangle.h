@@ -1,5 +1,5 @@
 #pragma once
-#include "SimpleActionsWithRectangle.cpp"
+#include "Rectangle.cpp"
 #include "RectangleDrawing.cpp"
 class Rectangle {
     int x1;
@@ -26,4 +26,4 @@ public:
     //Строка информации об объекте
     void InfoOfRectangle(int x1, int x2, int y1, int y2) {
     }
-};
+} rectangle;
