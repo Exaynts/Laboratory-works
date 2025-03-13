@@ -16,14 +16,14 @@ int main() {
     cin >> y2;
 
     // Создание объекта класса Legs
-    //Rectangle(x1, x2, y1, y2);
+    Rectangle(x1, x2, y1, y2);
     // Вывод информации
-    rectangle.InfoOfRectangle(x1, x2, y1, y2);
-    rectangle.RectangleDrawing(x1, x2, y1, y2);
+    InfoOfRectangle(x1, x2, y1, y2);
+    RectangleDrawing(x1, x2, y1, y2);
 
     // Выполнение программы для значений-констант
     const int xx1 = 12, xx2 = 0, yy1 = 5, yy2 = 0;
-    rectangle.InfoOfRectangle(xx1, xx2, yy1, yy2);
-    rectangle.RectangleDrawing(xx1, xx2, yy1, yy2);
+    InfoOfRectangle(xx1, xx2, yy1, yy2);
+    RectangleDrawing(xx1, xx2, yy1, yy2);
     return 0;
 }
