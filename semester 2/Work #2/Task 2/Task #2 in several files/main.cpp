@@ -5,18 +5,18 @@ using namespace std;
 
 int main() {
     // Ввод данных
-    float x1, x2, y1, y2;
+    int x1, x2, y1, y2;
     cout << "Enter x1: ";
     cin >> x1;
-    cout << "Enter y1: ";
-    cin >> x2;
     cout << "Enter x2: ";
+    cin >> x2;
+    cout << "Enter y1: ";
     cin >> y1;
     cout << "Enter y2: ";
     cin >> y2;
 
     // Создание объекта класса Legs
-    rectangle(x1, x2, y1, y2);
+    //Rectangle(x1, x2, y1, y2);
     // Вывод информации
     rectangle.InfoOfRectangle(x1, x2, y1, y2);
     rectangle.RectangleDrawing(x1, x2, y1, y2);
