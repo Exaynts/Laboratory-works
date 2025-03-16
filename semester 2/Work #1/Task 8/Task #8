@@ -31,7 +31,7 @@ vector <Computer> ReadFile(const string& filename) {
     return computers;
 }
 
-// Просмотр и обработка данных
+// Обработка данных
 float Data_Processing(const vector <Computer>& computers) {
     float sumprice = 0;
     for (const auto& computer: computers) {
