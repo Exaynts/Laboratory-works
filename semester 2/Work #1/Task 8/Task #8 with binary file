@@ -5,7 +5,7 @@ using namespace std;
 
 // Описание компьютера
 struct Computer {
-    string computername;
+    char computername[63];
     float processor_frequency; // В ГГц
     float RAM_size; // в Гб
     float hard_drive_size; // в Гб
