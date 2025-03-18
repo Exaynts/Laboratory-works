@@ -5,7 +5,7 @@ using namespace std;
 
 // Описание клиента
 struct Client {
-    string SurnameNP; // Фамилия и инициалы
+    char SurnameNP[63]; // Фамилия и инициалы
     float cost_of_services;
     int paid_month;
     int paid_month_in_advance;
