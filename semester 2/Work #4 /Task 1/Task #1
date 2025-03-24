@@ -9,19 +9,16 @@ int main()
     const int n = 10;
     string cities[n]{ "Париж", "Лондон", "Лиссабон", "Киев",
         "Москва", "Прага", "Рим", "Копенгаген", "Бухарест", "Ставрополь"};
-    int i = 0;
-    int j = 0;
+    int i = 0; // 0-9
+    int j = 0; // 0-1
     int A[2]; // Индексы нужных городов
-    while (j < 2 and i < n) {
+    while (i < n and j < 2) {
         int p = cities[i].size() - 1;
-        cout << "p = " << cities[i][p] << endl;
         if (cities[i][p] == 'а') {
-            cout << "1" << endl;
             A[j] = i;
             j += 1;
         }
         i += 1;
-        cout << "0" << endl;
     }
     // Замена местами двух городов, оканчивающихся на "а"
     swap(cities[A[0]], cities[A[1]]);
