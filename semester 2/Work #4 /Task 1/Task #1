@@ -4,7 +4,6 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "ru");
-    //system("chcp 1251");
       // Создание массива
     const int n = 10;
     string cities[n]{ "Париж", "Лондон", "Лиссабон", "Киев",
