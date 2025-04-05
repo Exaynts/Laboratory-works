@@ -9,7 +9,7 @@ public:
     // Конструктор класса массива чисел
     Numbers() {
         int length = 1;
-        vector <int> numbers(lenght);
+        vector <int> numbers(length);
     }
     // Конструктор класса массива чисел произвольной длины
     Numbers(int len) {
@@ -17,12 +17,12 @@ public:
         vector <int> numbers(length);
     }
     int Get_length() {
-        return length;
+        return numbers.length;
     }
     
     // Заполнение массива
-    Numbers Input(Numbers& numbers) {
-        for (int i = 0; i < length; i++) {
+    Numbers Input(Numbers* numbers2) {
+        for (int i = 0; i < numbers.Get_length(); i++) {
             int value;
             cout << endl << "i = ";
             cin >> value;
@@ -47,7 +47,7 @@ public:
                 cout << "Char error!";
                 return numbers1;
             }
-            Numbers Sum(numbers1.Get_lenght());
+            Numbers Sum(numbers1.Get_length());
             for (int i = 0; i < numbers1.Get_length(); i++) {
                 Sum.nums[i] = numbers1.nums[i] + s*numbers2.nums[i];
             }
@@ -110,7 +110,7 @@ int main() {
     Numbers numbers1(n1);
     Numbers numbers2(n2);
 
-    numbers1.Input(numbers1);
+    numbers1.Input(&numbers1);
 
     // Вывод данных
     return 0;
