@@ -3,26 +3,26 @@
 using namespace std;
 
 class Numbers {
-    int lenght; // Длина массива чисел
+    int length; // Длина массива чисел
     vector <int> nums;
 public:
     // Конструктор класса массива чисел
     Numbers() {
-        int lenght = 1;
+        int length = 1;
         vector <int> numbers(lenght);
     }
     // Конструктор класса массива чисел произвольной длины
     Numbers(int len) {
-        int lenght = len;
-        vector <int> numbers(lenght);
+        int length = len;
+        vector <int> numbers(length);
     }
-    int Get_lenght() {
-        return lenght;
+    int Get_length() {
+        return length;
     }
     
     // Заполнение массива
     Numbers Input(Numbers& numbers) {
-        for (int i = 0; i < lenght; i++) {
+        for (int i = 0; i < length; i++) {
             int value;
             cout << endl << "i = ";
             cin >> value;
@@ -33,7 +33,7 @@ public:
 
     // Сложение/Вычитание массивов
     Numbers Sum(Numbers numbers1, Numbers numbers2, char sign) { // sign это "+"" или "-"
-        if (numbers1.Get_lenght() != numbers2.Get_lenght()) {
+        if (numbers1.Get_length() != numbers2.Get_length()) {
             cout << "Длины массивов различны!" << endl;
             return numbers1;
         }
@@ -48,7 +48,7 @@ public:
                 return numbers1;
             }
             Numbers Sum(numbers1.Get_lenght());
-            for (int i = 0; i < numbers1.Get_lenght(); i++) {
+            for (int i = 0; i < numbers1.Get_length(); i++) {
                 Sum.nums[i] = numbers1.nums[i] + s*numbers2.nums[i];
             }
             return Sum;
@@ -57,7 +57,7 @@ public:
     // Умножение/деление массива на скаляр
     Numbers Multiply(Numbers numbers, int scalar, char sign) { // sign это "*" или "/"
         if (sign == '*') {
-            for (int i = 0; i < numbers.Get_lenght(); i++) {
+            for (int i = 0; i < numbers.Get_length(); i++) {
                 numbers.nums[i] *= scalar;
             }
         }
@@ -66,7 +66,7 @@ public:
                 cout << "Division by zero!" << endl;
             }
             else {
-                for (int i = 0; i < numbers.Get_lenght(); i++) {
+                for (int i = 0; i < numbers.Get_length(); i++) {
                     numbers.nums[i] /= scalar;
                 }
             }
@@ -79,7 +79,7 @@ public:
 
     // Вывод элемента массива по индексу
     void print(Numbers numbers, int i) {
-        if (i < numbers.Get_lenght()) {
+        if (i < numbers.Get_length()) {
             cout << numbers.nums[i] << endl;
         }
         else {
@@ -88,7 +88,7 @@ public:
     }
     // Вывод всего массива
     void print_all(Numbers numbers) {
-        for (int i = 0; i < numbers.Get_lenght(); i++) {
+        for (int i = 0; i < numbers.Get_length(); i++) {
             cout << numbers.nums[i] << endl;
         }
     }
