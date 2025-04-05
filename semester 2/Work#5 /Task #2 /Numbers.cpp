@@ -8,12 +8,12 @@ class Numbers {
     vector <int> nums;
 public:
     // Конструктор класса массива чисел
-    Numbers Numbers() {
+    void Numbers() {
         int length = 1;
         vector <int> numbers(length);
     }
     // Конструктор класса массива чисел произвольной длины
-    Numbers Numbers(int len) {
+    void Numbers(int len) {
         int length = len;
         vector <int> numbers(length);
     }
