@@ -17,7 +17,7 @@ int main() {
     Numbers numbers1(n1);
     Numbers numbers2(n2);
 
-    numbers1.Input(numbers1);
+    numbers1.Input(&numbers1);
 
     // Вывод данных
     return 0;
