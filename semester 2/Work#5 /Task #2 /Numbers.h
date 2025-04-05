@@ -5,7 +5,7 @@
 using namespace std;
 
 class Numbers {
-    int lenght; // Длина массива чисел
+    int length; // Длина массива чисел
     vector <int> nums;
 public:
     // Конструктор класса массива чисел
@@ -14,11 +14,12 @@ public:
     // Конструктор класса массива чисел произвольной длины
     Numbers(int len) {
     }
-    int Get_lenght() {
+    int Get_length() {
+        return numbers.length;
     }
     
     // Заполнение массива
-    Numbers Input(Numbers& numbers) {
+    Numbers Input(Numbers* numbers2) {
     }
 
     // Сложение/Вычитание массивов
