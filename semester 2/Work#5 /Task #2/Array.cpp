@@ -44,7 +44,7 @@ void Array::Input() {
     cout << "Array input:" << endl;
     int value;
     for (int i = 0; i < length; i++) {
-        cout << "i = ";
+        cout << "i" << i << " = ";
         cin >> value;
         nums[i] = value;
     }
