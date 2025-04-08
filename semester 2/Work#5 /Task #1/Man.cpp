@@ -4,6 +4,7 @@
 #include <string>
 #include <stdlib.h>
 #include <cstring>
+#pragma warning(disable : 4996)
 
 //using namespace std;
 
