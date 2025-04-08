@@ -1,5 +1,3 @@
-﻿#include <fstream>
-#include <iostream>
 #include "Man.h"
 using namespace std;
 
