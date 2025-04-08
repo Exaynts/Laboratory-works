@@ -3,6 +3,8 @@ const int l_name = 30;
 const int l_year = 5;
 const int l_pay = 10;
 const int l_buf = l_name + l_year + l_pay;
+#include <fstream>
+#include <iostream>
 
 class Man {
 private:
