@@ -75,8 +75,6 @@ int main() {
     // Создание бинарного файла c данными
     string filename = "clients.bin";
     CreateFile(filename);
-    // Чтение данных из файла
-    //vector <Client> clients = ReadFile(filename);
     // Обработка данных
     Data_Processing(filename);
     // Вывод данных
